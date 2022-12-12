@@ -1,0 +1,47 @@
+<div class="productContainer container mt-5">
+  <div class="demo-button-container mb-3" align="end">
+    <button mat-raised-button (click)="addNewProduct()" class="demo-button">
+      Add New Customer
+    </button>
+  </div>
+
+  <table mat-table [dataSource]="products" class="mat-elevation-z8 demo-table">
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>No.</th>
+      <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+    </ng-container>
+
+    <!-- code Column -->
+
+    <!-- enName Column -->
+    <ng-container matColumnDef="enName">
+      <th mat-header-cell *matHeaderCellDef>English Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.enName }}</td>
+    </ng-container>
+
+    <!-- arName Column -->
+    <ng-container matColumnDef="arName">
+      <th mat-header-cell *matHeaderCellDef>Arabic Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.arName }}</td>
+    </ng-container>
+
+    <!-- Details Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Details</th>
+      <td mat-cell *matCellDef="let element">
+        <img
+          (click)="viewDetails(element)"
+          style="cursor: pointer"
+          width="20px"
+          height="20px"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/view-show-all-icon.png"
+          alt=""
+        />
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
