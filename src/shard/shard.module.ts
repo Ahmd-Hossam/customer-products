@@ -5,6 +5,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { NavComponent } from './nav/nav.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [NavComponent],
   imports: [
@@ -14,6 +15,7 @@ import { NavComponent } from './nav/nav.component';
     MatDialogModule,
     MatButtonModule,
     MatTableModule,
+    RouterModule,
   ],
   exports: [
     FormsModule,
