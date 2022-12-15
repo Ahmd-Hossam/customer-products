@@ -11,7 +11,7 @@
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a
@@ -33,5 +33,17 @@
         </a>
       </li>
     </ul>
+
+    <div>
+      <li class="nav-item d-flex flex-end">
+        <a
+          class="nav-link"
+          [routerLink]="['/login']"
+          routerLinkActive="router-link-active"
+        >
+          <button class="logout">Logout</button>
+        </a>
+      </li>
+    </div>
   </div>
 </nav>

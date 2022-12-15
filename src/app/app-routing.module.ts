@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from 'src/shard/login/login.component';
 
 const routes: Routes = [
   {
@@ -8,6 +9,10 @@ const routes: Routes = [
       import('../features/products/products.module').then(
         (m) => m.ProductsModule
       ),
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: 'products',

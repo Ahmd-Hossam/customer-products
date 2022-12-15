@@ -6,8 +6,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { NavComponent } from './nav/nav.component';
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 @NgModule({
-  declarations: [NavComponent],
+  declarations: [NavComponent, LoginComponent],
   imports: [
     CommonModule,
     FormsModule,

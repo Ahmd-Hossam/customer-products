@@ -1,0 +1,23 @@
+.loginContainer {
+  height: 100vh;
+  background: url("../../assets/imgs/login-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  button {
+    padding: 22px 88px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #588be5a6, #3ac7dd87);
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+    font-size: 34px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: linear-gradient(45deg, #3ac7dd87, #588be5a6);
+    }
+  }
+}

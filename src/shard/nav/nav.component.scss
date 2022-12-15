@@ -1,3 +1,18 @@
 .navbar {
   padding: 15px 100px;
 }
+
+.logout {
+  border: none;
+  padding: 7px 17px;
+  background: #c73f3f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background: #d76060;
+  }
+}
